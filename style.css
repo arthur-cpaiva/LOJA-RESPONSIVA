@@ -27,7 +27,7 @@ nav {
 
 .menu-mobile {
     display: none;
-    background-color: #1e3a8a;
+    background-color: #000000;
 }
 
 .menu-mobile a {
@@ -115,7 +115,16 @@ header p {
     justify-content: center;
 }
 
-@media (min-width:600px) {
+footer {
+    background-color: rgb(0, 6, 7);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+@media (min-width:300px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -128,7 +137,7 @@ header p {
         display: block;
     }
 
-    #origem-click:checked~.menu-mobile {
+    #origem-click:checked~ .menu-mobile {
         display: block;
     }
 }
